@@ -1,2 +1,3 @@
 # LockBox
- Small Java 8 Application for me to learn.
+
+Personal Application to store Passwords on a small USB that i carry on me all the Tiime.

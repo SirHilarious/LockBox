@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<GridPane xmlns:fx="http://javafx.com/fxml/1" hgap="14.0" maxHeight="+Infinity" maxWidth="+Infinity"
+          minHeight="-Infinity" minWidth="-Infinity"
+          vgap="20.0" xmlns="http://javafx.com/javafx/8">
+    <columnConstraints>
+        <ColumnConstraints hgrow="NEVER" maxWidth="-Infinity" minWidth="-Infinity"/>
+        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="+Infinity" minWidth="-Infinity"/>
+    </columnConstraints>
+    <padding>
+        <Insets bottom="14.0" left="14.0" right="14.0" top="14.0"/>
+    </padding>
+    <rowConstraints>
+        <RowConstraints maxHeight="+Infinity" minHeight="-Infinity" valignment="CENTER" vgrow="ALWAYS"/>
+        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="NEVER"/>
+    </rowConstraints>
+    <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0"
+               GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="TOP">
+        <!-- place holder image-->
+    </ImageView>
+    <VBox maxHeight="+Infinity" maxWidth="+Infinity" minHeight="-Infinity" prefWidth="400.0" spacing="7.0"
+          GridPane.columnIndex="1" GridPane.rowIndex="0">
+        <Label fx:id="messageLabel" text="Login was successful!" textAlignment="LEFT" wrapText="true">
+            <font>
+                <Font name="System Bold" size="13.0"/>
+            </font>
+        </Label>
+        <Label fx:id="detailsLabel" text="Press &quot;Ok&quot; to continue!" textAlignment="LEFT" wrapText="true">
+            <font>
+                <Font size="12.0"/>
+            </font>
+        </Label>
+    </VBox>
+    <HBox maxHeight="-Infinity" maxWidth="+Infinity" minHeight="-Infinity" minWidth="-Infinity" GridPane.columnIndex="1"
+          GridPane.rowIndex="1">
+        <HBox fx:id="actionParent" alignment="CENTER">
+            <HBox.margin>
+                <Insets/>
+            </HBox.margin>
+            <Button fx:id="actionButton" mnemonicParsing="false" text="Action" HBox.hgrow="NEVER">
+                <HBox.margin>
+                    <Insets right="14.0"/>
+                </HBox.margin>
+            </Button>
+        </HBox>
+        <Pane maxWidth="+Infinity" HBox.hgrow="ALWAYS"/>
+        <Button fx:id="cancelButton" cancelButton="true" minWidth="80.0" mnemonicParsing="false" text="Cancel"
+                HBox.hgrow="NEVER">
+            <HBox.margin>
+                <Insets/>
+            </HBox.margin>
+        </Button>
+        <HBox fx:id="okParent" alignment="CENTER">
+            <Button fx:id="okButton" minWidth="80.0" mnemonicParsing="false" text="Ok" HBox.hgrow="NEVER">
+                <HBox.margin>
+                    <Insets left="14.0"/>
+                </HBox.margin>
+            </Button>
+        </HBox>
+    </HBox>
+</GridPane>

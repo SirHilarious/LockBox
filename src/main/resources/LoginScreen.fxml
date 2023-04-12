@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity"
+      prefHeight="499.0" prefWidth="605.0" xmlns="http://javafx.com/javafx/8">
+    <PasswordField fx:id="passwordField" layoutX="221.0" layoutY="324.0" promptText="Password">
+        <tooltip>
+            <Tooltip text="Type in your Password here!"/>
+        </tooltip>
+    </PasswordField>
+
+    <PasswordField fx:id="usernameField" layoutX="221.0" layoutY="288.0" promptText="Username">
+        <tooltip>
+            <Tooltip text="Type in your Username in here!"/>
+        </tooltip>
+    </PasswordField>
+
+    <TextField fx:id="authenticationKeyField" layoutX="221.0" layoutY="358.0" promptText="Authentication Key">
+        <tooltip>
+            <Tooltip text="Type in your Authentication Key here."/>
+        </tooltip>
+    </TextField>
+    <Button fx:id="submitButton" layoutX="255.0" layoutY="411.0" mnemonicParsing="false" prefHeight="25.0"
+            prefWidth="81.0" text="Submit">
+        <tooltip>
+            <Tooltip text="Submit your Username, Password and Authentication Key."/>
+        </tooltip>
+    </Button>
+    <Button fx:id="cancelButton" layoutX="531.0" layoutY="423.0" mnemonicParsing="false" prefHeight="38.0"
+            prefWidth="60.0" text="Cancel">
+        <tooltip>
+            <Tooltip text="Be careful! Clicking this will close the Application!"/>
+        </tooltip>
+    </Button>
+    <TextFlow layoutX="201.0" layoutY="32.0" prefHeight="19.0" prefWidth="190.0">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Login Window" wrappingWidth="277.88671875">
+            <font>
+                <Font name="System Bold" size="24.0"/>
+            </font>
+        </Text>
+    </TextFlow>
+    <TextFlow layoutX="196.0" layoutY="208.0" prefHeight="38.0" prefWidth="213.0">
+        <effect>
+            <Glow/>
+        </effect>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Type in your Username and your Password aswell as the Authentication Key and press &quot;Submit&quot;!"
+              wrappingWidth="204.544921875"/>
+    </TextFlow>
+    <TextFlow layoutX="196.0" layoutY="132.0" prefHeight="67.0" prefWidth="198.0">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0"
+              text="If you want to cancel the Operation press &quot;Cancel&quot; to exit the Application."
+              wrappingWidth="132.341796875"/>
+    </TextFlow>
+</Pane>

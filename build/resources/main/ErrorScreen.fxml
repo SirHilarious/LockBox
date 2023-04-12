@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="237.0" prefWidth="307.0" text="Error has occured!"
+            xmlns="http://javafx.com/javafx/8">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+        <TextArea layoutX="23.0" layoutY="6.0" prefHeight="200.0" prefWidth="259.0" promptText="Error Details"
+                  text="Error Description:&#10;&#10;"/>
+    </AnchorPane>
+</TitledPane>
